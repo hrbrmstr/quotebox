@@ -1,3 +1,7 @@
+# quotebox - generate NPR-like twitter embedded picture quotes
+# by @hrbrmstr
+# MIT license
+
 import argparse
 from os.path import basename, splitext
 from subprocess import call
