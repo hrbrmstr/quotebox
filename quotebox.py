@@ -46,14 +46,14 @@ temp = """
 
   <rect width="640px" height="360px" style="fill:white" />
 
-  <foreignObject x="25" y="30" width="590" height="160">
+  <foreignObject x="25" y="40" width="590" height="160">
     <body xmlns="http://www.w3.org/1999/xhtml"
       style="background: white; font-family: Lato; font-weight:700; font-stretch:normal; font-size:32px; line-height:32px; text-indent:-12px; margin-left:20px; color:#333333">
       <p>&#8220;%s&#8221;</p>
     </body>
   </foreignObject>
 
-  <foreignObject x="40" y="200" width="540" height="165">
+  <foreignObject x="44" y="200" width="540" height="165">
     <body xmlns="http://www.w3.org/1999/xhtml"
       style="background: white; font-family: Lato; font-weight:300; font-stretch:normal; font-size:20px; line-height:20px; color:#333333">
       <p>&#8212; %s</p>

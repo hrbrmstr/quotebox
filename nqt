@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -x
+#!/usr/bin/env bash 
 #
 # Little script helper to fire up a new/blank quote template
 # and then generate the graphic. Tested on OS X with the 
