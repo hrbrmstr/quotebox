@@ -1,0 +1,19 @@
+#!/usr/bin/env bash -x
+#
+# Little script helper to fire up a new/blank quote template
+# and then generate the graphic. Tested on OS X with the 
+# values below. Change the env vars to suit your environment.
+# I put this in /usr/local/bin/nqt
+
+QUOTEBOX_DIR=~/Development/quotebox
+LOGO=~/Development/quotebox/shield.png
+EXEC_DIR=/tmp
+EDITOR="subl -w"
+OPENER="open"
+
+cp $QUOTEBOX_DIR/template.json $EXEC_DIR/new.json
+cp $LOGO $EXEC_DIR/logo.png
+$EDITOR $EXEC_DIR/new.json
+cd $EXEC_DIR
+python $QUOTEBOX_DIR/quotebox.py new.json
+$OPENER new.png

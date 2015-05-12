@@ -10,3 +10,7 @@ A simpler python workflow to make NPR-like twitter quote boxes
 `python quotebox.py test.json`
 
 ![output](https://raw.githubusercontent.com/hrbrmstr/quotebox/master/test.png)
+
+# Changelog 
+
+- 2015-03-12 : minor modification to font sizes and whitespace; added helper script `nqt`

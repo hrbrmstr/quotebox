@@ -30,9 +30,10 @@ im = Image.open(opts["logo"])
 width, height = im.size
 
 # twitter embedded tweet media is 640x360
+# this is for the logo at the bottom right
 
 x = 640 - width - 25
-y = 360 - height - 25
+y = 360 - height - 30
 
 # now, fill in SVG bopilerplate
 
@@ -40,14 +41,14 @@ temp = """
 <svg width="640px" height="360px" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
   <defs>
-    <style type="text/css">@import url('http://fonts.googleapis.com/css?family=Lato:300,900');</style>
+    <style type="text/css">@import url('http://fonts.googleapis.com/css?family=Lato:300,700');</style>
   </defs>
 
   <rect width="640px" height="360px" style="fill:white" />
 
-  <foreignObject x="25" y="25" width="590" height="165">
+  <foreignObject x="25" y="30" width="590" height="160">
     <body xmlns="http://www.w3.org/1999/xhtml"
-      style="background: white; font-family: Lato; font-weight:900; font-stretch:normal; font-size:36px; line-height:36px; text-indent:-16px; margin-left:20px; color:#333333">
+      style="background: white; font-family: Lato; font-weight:700; font-stretch:normal; font-size:32px; line-height:32px; text-indent:-12px; margin-left:20px; color:#333333">
       <p>&#8220;%s&#8221;</p>
     </body>
   </foreignObject>
